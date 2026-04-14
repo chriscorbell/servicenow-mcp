@@ -92,8 +92,9 @@ If you change these defaults, do it intentionally. Production should remain read
 #### VS Code with GitHub Copilot
 
 1. Open the cloned repo directory in VSCode (approve the MCP server trust prompt if shown)
-2. Click "Start" above each server that you want to be able to connect to listed in in the `.vscode/mcp.json` file
-3. The `AGENTS.md` file in this repo is automatically loaded as workspace instructions, providing the agent with ServiceNow-specific context and operating rules
+2. Open the `.vscode/mcp.json` file in the editor and click "Start" above each server that you want to be able to connect to
+3. Start a new GitHub Copilot chat - it automatically connects to all running MCP servers
+4. The `AGENTS.md` file in this repo is automatically loaded as workspace instructions, providing the agent with ServiceNow-specific context and operating rules
 
 #### OpenCode
 
