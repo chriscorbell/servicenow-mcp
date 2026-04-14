@@ -2,3 +2,4 @@
 .vscode/mcp.json
 opencode.json
 .mcp.json
+*.DS_Store
