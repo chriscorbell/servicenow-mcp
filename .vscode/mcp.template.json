@@ -1,0 +1,64 @@
+{
+  "servers": {
+    "dev": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["SERVICENOW_MCP_SERVER_JS_PATH"],
+      "env": {
+        "SERVICENOW_INSTANCE_URL": "https://DEV_INSTANCE_NAME.service-now.com",
+        "SERVICENOW_AUTH_METHOD": "basic",
+        "SERVICENOW_BASIC_USERNAME": "USERNAME",
+        "SERVICENOW_BASIC_PASSWORD": "PASSWORD",
+        "MCP_TOOL_PACKAGE": "platform_developer",
+        "WRITE_ENABLED": "true",
+        "CMDB_WRITE_ENABLED": "false",
+        "SCRIPTING_ENABLED": "true"
+      }
+    },
+    "qa": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["SERVICENOW_MCP_SERVER_JS_PATH"],
+      "env": {
+        "SERVICENOW_INSTANCE_URL": "https://QA_INSTANCE_NAME.service-now.com",
+        "SERVICENOW_AUTH_METHOD": "basic",
+        "SERVICENOW_BASIC_USERNAME": "USERNAME",
+        "SERVICENOW_BASIC_PASSWORD": "PASSWORD",
+        "MCP_TOOL_PACKAGE": "platform_developer",
+        "WRITE_ENABLED": "true",
+        "CMDB_WRITE_ENABLED": "false",
+        "SCRIPTING_ENABLED": "false"
+      }
+    },
+    "uat": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["SERVICENOW_MCP_SERVER_JS_PATH"],
+      "env": {
+        "SERVICENOW_INSTANCE_URL": "https://UAT_INSTANCE_NAME.service-now.com",
+        "SERVICENOW_AUTH_METHOD": "basic",
+        "SERVICENOW_BASIC_USERNAME": "USERNAME",
+        "SERVICENOW_BASIC_PASSWORD": "PASSWORD",
+        "MCP_TOOL_PACKAGE": "platform_developer",
+        "WRITE_ENABLED": "false",
+        "CMDB_WRITE_ENABLED": "false",
+        "SCRIPTING_ENABLED": "false"
+      }
+    },
+    "prod": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["SERVICENOW_MCP_SERVER_JS_PATH"],
+      "env": {
+        "SERVICENOW_INSTANCE_URL": "https://PROD_INSTANCE_NAME.service-now.com",
+        "SERVICENOW_AUTH_METHOD": "basic",
+        "SERVICENOW_BASIC_USERNAME": "USERNAME",
+        "SERVICENOW_BASIC_PASSWORD": "PASSWORD",
+        "MCP_TOOL_PACKAGE": "platform_developer",
+        "WRITE_ENABLED": "false",
+        "CMDB_WRITE_ENABLED": "false",
+        "SCRIPTING_ENABLED": "false"
+      }
+    }
+  }
+}
